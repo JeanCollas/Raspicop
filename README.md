@@ -19,5 +19,5 @@ The control of ESCs will be implemented using the Servoblaster library of richar
 
 # Howto
 
-  make
-  sudo ./Raspicop 2> errorOutput
+    make
+    sudo ./Raspicop 2> errorOutput
