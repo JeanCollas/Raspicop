@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
 	// removed to start 3D UI only on demand
 	//	startUI();
 
-
 	while(run==1)
 	{
 		clock_gettime(CLOCK_MONOTONIC, &startTime);
