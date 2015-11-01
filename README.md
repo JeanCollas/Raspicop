@@ -104,6 +104,9 @@ Then how to set an "easy" password because we don't care about security: passwor
     sudo route del default
     sudo route add default gw 192.168.1.1 # (wifi router IP)
 
+To find the Pi IP if assigned with dynamic DHCP:
+    FOR /L %I IN (1,1,254) DO @echo %I & ping.exe -w 10 -n 1 192.168.1.%I | FIND /i "TTL"
+
 ## No X for sudo ssh applications
 
 When running a GTK application over ssh, if the app is ran under sudo, it fails. 
