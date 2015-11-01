@@ -89,3 +89,26 @@ The control of ESCs will be implemented using the Servoblaster library of richar
     geometry.h          // Objects definition
     copter3d.h          // 3D copter component
     window3d.h          // Window used to display the 3D copter
+
+
+# Specific issues encontered
+
+## Username/passwork
+First problem when starting the Pi: what is the default username/password?? Ok, after a little search it is pi/raspberry
+Then how to set an "easy" password because we don't care about security: password has to be set via sudo: sudo su; passwd pi;
+
+## Issue with the Wifi configuration, net access over wifi when the LAN is connected
+    sudo apt-get remove ifplugd
+    sudo route del default
+    sudo route add default gw 192.168.1.1 # (wifi router IP)
+
+## No X for sudo ssh applications
+
+When running a GTK application over ssh, if the app is ran under sudo, it fails. 
+Solution:
+    Run script enableSudoDisplay.sh
+
+What does it do: 
+    xauth list
+    sudo xauth add $
+    where $ is the line corresponding to the X window.
