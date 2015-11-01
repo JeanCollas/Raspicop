@@ -5,7 +5,7 @@ It is 'another' Picopter project, which still needs a lot of work to compete som
 This project has been mainly done for fun, and started from scratch for educational purposes (Github, Raspberry, C++, sensors, ...).
 It is composed of several modules, and is not finished yet, the application framework is done but the pilot is missing :)
 
-I have started this repository to share my -very high- number of issues faced while implementing, hope this will help some people. It aims at being improved.
+I have started this repository to share my -very high- number of issues faced while implementing, hope this will help some people, and probably me in the future. It aims at being improved.
 
 More to come!
 
@@ -93,7 +93,7 @@ The control of ESCs will be implemented using the Servoblaster library of richar
 
 # Specific issues encontered
 
-## Username/passwork
+## Username/password
 First problem when starting the Pi: what is the default username/password?? Ok, after a little search it is pi/raspberry
 Then how to set an "easy" password because we don't care about security: password has to be set via sudo: sudo su; passwd pi;
 
