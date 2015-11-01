@@ -1,8 +1,11 @@
 # Raspicop
 Implementation of a C++ Raspberry quadricopter
 
+It is 'another' Picopter project, which still needs a lot of work to compete some other more advanced projects.
 This project has been mainly done for fun, and started from scratch for educational purposes (Github, Raspberry, C++, sensors, ...).
 It is composed of several modules, and is not finished yet, the application framework is done but the pilot is missing :)
+
+I have started this repository to share my -very high- number of issues faced while implementing, hope this will help some people. It aims at being improved.
 
 More to come!
 
@@ -21,6 +24,40 @@ The control of ESCs will be implemented using the Servoblaster library of richar
 
     make
     sudo ./Raspicop 2> errorOutput
+
+# Hardware
+
+## Yet handled
+
+    Raspberry Pi 2
+    Wifi dongle
+    MPU-6050 (Accelerometer, Gyroscope)
+    
+## To come
+
+    ESCs (half way)
+    HC-SR04 (Distance sensor), half way
+    GY-264 HMC5883L (Compass)
+    RFM12B (radio transmitters)
+    or HC-12 SI4463 (wireless serial port)
+    3G USB key (if ok with power consumption)
+    HC-SR501 (Infrared sensor)
+    Camera + Infrared camera
+    Battery checker
+    
+    Some Arduino delegation is useful
+    
+    
+# Software
+
+    Raspbian Jessie
+    bcm2835 library
+    gtkmm
+    
+## To come
+
+    Servoblaster
+    
 
 # Content
 
