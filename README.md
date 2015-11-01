@@ -54,6 +54,9 @@ The control of ESCs will be implemented using the Servoblaster library of richar
     Raspbian Jessie
     bcm2835 library
     gtkmm
+    samba (to edit under windows)
+    
+    Windows + Putty + XLaunch
     
 ## To come
     a way to work I2C in user land (currently sudo)
@@ -104,7 +107,8 @@ Then how to set an "easy" password because we don't care about security: passwor
     sudo route del default
     sudo route add default gw 192.168.1.1 # (wifi router IP)
 
-To find the Pi IP if assigned with dynamic DHCP:
+## To find the Pi IP if assigned with dynamic DHCP sous windows (cmd), quick check all IPs of subnet:
+
     FOR /L %I IN (1,1,254) DO @echo %I & ping.exe -w 10 -n 1 192.168.1.%I | FIND /i "TTL"
 
 ## No X for sudo ssh applications
@@ -117,3 +121,21 @@ What does it do:
     xauth list
     sudo xauth add $
     where $ is the line corresponding to the X window.
+
+## Setup Samba to edit the project via windows (quite easy)
+
+    sudo apt-get install samba
+    sudo smbpasswd -a pi
+    sudo nano /etc/samba/smb.conf
+
+then add something like this (Prog will be the name of the shared folder)
+
+    [Prog]
+    path = /home/pi/projects
+    valid users = pi
+    writable = yes
+
+Under windows 10:
+
+    Explorer: \\192.168.1.11 (any pi IP)
+    click on a folder, in the ribbon: "rapid access" > Map to keep it as a network drive.
