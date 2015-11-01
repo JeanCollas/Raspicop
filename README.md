@@ -49,13 +49,12 @@ The control of ESCs will be implemented using the Servoblaster library of richar
     
     
 # Software
-
     Raspbian Jessie
     bcm2835 library
     gtkmm
     
 ## To come
-
+    a way to work I2C in user land (currently sudo)
     Servoblaster
     
 
