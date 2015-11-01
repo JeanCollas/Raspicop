@@ -6,6 +6,8 @@ It is composed of several modules, and is not finished yet, the application fram
 
 More to come!
 
+\o/ My first Github repository filled!
+
 # History
 I started this project by buying a Raspberry Pi 2, some sensors, ESC and motors. 
 More details to come...
