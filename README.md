@@ -42,7 +42,7 @@ The control of ESCs will be implemented using the Servoblaster library of richar
     GY-264 HMC5883L (Compass)
     RFM12B (radio transmitters)
     or HC-12 SI4463 (wireless serial port)
-    3G USB key (if ok with power consumption)
+    3G USB key (if ok with power consumption) + GPS for remote flights
     HC-SR501 (Infrared sensor)
     Camera + Infrared camera
     Battery checker
