@@ -33,8 +33,8 @@ The control of ESCs will be implemented using the Servoblaster library of richar
     Makefile    
 
 ## MPU6050 module
-    helper_3dmath.h // Original 3DMath helper
-    I2Cdev.h          // I2Cdev lib from jrowberg
+    helper_3dmath.h             // Original 3DMath helper
+    I2Cdev.h                    // I2Cdev lib from jrowberg
     MPU6050_6Axis_MotionApps20.h // from jrowberg
     MPU6050.cpp                 // from jrowberg
     MPU6050.h                   // modified MPU6050 object
