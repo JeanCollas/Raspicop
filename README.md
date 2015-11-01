@@ -5,7 +5,9 @@ It is 'another' Picopter project, which still needs a lot of work to compete som
 This project has been mainly done for fun, and started from scratch for educational purposes (Github, Raspberry, C++, sensors, ...).
 It is composed of several modules, and is not finished yet, the application framework is done but the pilot is missing :)
 
-I have started this repository to share my -very high- number of issues faced while implementing, hope this will help some people, and probably me in the future. It aims at being improved.
+I have started this repository to share my -very high- number of issues faced while implementing, hope this will help some people, and probably me in the future. I spent quite some hours on making everything work well, especially the 3D thing.
+It aims at being improved. 
+
 
 More to come!
 
