@@ -1,7 +1,7 @@
 # Raspicop
 Implementation of a C++ Raspberry quadricopter
 
-This project has been mainly done for fun, and started from scratch for educational purposes.
+This project has been mainly done for fun, and started from scratch for educational purposes (Github, Raspberry, C++, sensors, ...).
 It is composed of several modules, and is not finished yet, the application framework is done but the pilot is missing :)
 
 More to come!
