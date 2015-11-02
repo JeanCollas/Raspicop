@@ -34,11 +34,11 @@ The control of ESCs will be implemented using the Servoblaster library of richar
     Raspberry Pi 2
     Wifi dongle
     MPU-6050 (Accelerometer, Gyroscope)
+    HC-SR04 (Distance sensor)
     
 ## To come
 
     ESCs (half way)
-    HC-SR04 (Distance sensor), half way
     GY-264 HMC5883L (Compass)
     RFM12B (radio transmitters)
     or HC-12 SI4463 (wireless serial port)
